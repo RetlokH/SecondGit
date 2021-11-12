@@ -1,9 +1,26 @@
 package hek.git.one;
 
-public class OneNrTwo {
-    //change in on
+import java.util.Objects;
 
-    public OneNrTwo() {
+public class OneNrTwo {
+    private final String name;
+
+
+    public OneNrTwo(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        OneNrTwo oneNrTwo = (OneNrTwo) o;
+        return Objects.equals(name, oneNrTwo.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
     }
 
     @Override
