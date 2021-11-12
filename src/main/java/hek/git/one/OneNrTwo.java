@@ -25,6 +25,8 @@ public class OneNrTwo {
 
     @Override
     public String toString() {
-        return "OneNrTwo{}";
+        return "OneNrTwo{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }
