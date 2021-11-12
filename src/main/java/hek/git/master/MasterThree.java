@@ -2,6 +2,7 @@ package hek.git.master;
 
 public class MasterThree {
     public MasterThree() {
+        //change in master
     }
 
     @Override
